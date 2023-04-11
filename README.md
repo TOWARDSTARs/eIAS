@@ -1,5 +1,5 @@
 # eIAS(experimental Internet Advertising System，试验性互联网广告系统)
-Software Engineering Practice of Class 4, Grade 2021, Huazhong University of Science and Technology
+Software Engineering Practice of Class 2, Grade 2021, Huazhong University of Science and Technology
 
 # Introduction项目介绍
 *该项目的主要结构包括以下三个方面：*
