@@ -21,9 +21,10 @@ Software Engineering Practice of Class 2, Grade 2021, Huazhong University of Sci
 # 项目负责人
 *暂定*
 # 项目组成员
-*Zaybc    沈星志
-lolowhg   袁开成
-Alexhust1 敖轩*
+*Zaybc      沈星志
+lolowhg     袁开成
+Alexhust1   敖轩
+turqu2oise  姜毅冉*
 
 # Features项目特性
 
