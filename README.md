@@ -1,5 +1,6 @@
 # eIAS(experimental Internet Advertising System，试验性互联网广告系统)
-Software Engineering Practice of Class 2, Grade 2021, Huazhong University of Science and Technology
+Curriculum Design of Software Engineering Theory and Practice of Class 2, Grade 2021, Huazhong University of Science and Technology
+软件工程理论与实践课程设计 华中科技大学 软件工程2102班
 
 # Introduction项目介绍
 *该项目的主要结构包括以下三个方面：*
@@ -18,9 +19,9 @@ Software Engineering Practice of Class 2, Grade 2021, Huazhong University of Sci
 
 *综上所述，该项目需要在前端网站，后端服务器，接口以及其他方面进行开发和部署，以便为企业客户和服务提供商提供高质量的广告服务。*
 
-# 项目负责人
+# Project manager项目负责人
 *暂定*
-# 项目组成员
+# Project member项目组成员
 *Zaybc      沈星志
 lolowhg     袁开成
 Alexhust1   敖轩
