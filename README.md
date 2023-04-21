@@ -21,10 +21,9 @@ Curriculum Design of Software Engineering Theory and Practice of Class 2, Grade 
 *综上所述，该项目需要在前端网站，后端服务器，接口以及其他方面进行开发和部署，以便为企业客户和服务提供商提供高质量的广告服务。*
 
 # Project manager项目负责人
-*暂定*
+*Zaybc      沈星志*
 # Project member项目组成员
-*Zaybc      沈星志
-lolowhg     袁开成
+*lolowhg     袁开成
 Alexhust1   敖轩
 turqu2oise  姜毅冉*
 
