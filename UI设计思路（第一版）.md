@@ -1,5 +1,4 @@
 ## UI设计
 
 
-
-![image-20230421205100794](/Users/zeyishen/Library/Application Support/typora-user-images/image-20230421205100794.png)
+![image](https://user-images.githubusercontent.com/96679292/233641092-f46655b7-f56c-4527-9fce-71c3539c317e.png)
