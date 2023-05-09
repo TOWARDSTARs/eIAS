@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管理员注册</title>
+    
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            background-image: linear-gradient(#6f7c85 0%, #b1d4d8 100%);
+            background-size: cover;
+            flex: 1;
+            align-items: center;
+        }
+        .register{
+            text-align: center;
+            margin: 0 auto;
+            width: 560px;
+            height: 600px;
+            background-color: rgba(87, 86, 86, 0.2);
+            border-radius: 25px;
+            box-shadow: 5px 2px 35px -7px #b4f0f9;
+        }
+        .register h1{
+            padding-top: 20px;
+            margin-top: 20px;
+            color: aliceblue;
+            font-weight: 100;
+        }
+        .register_form{
+            padding: 20px;
+        }
+        .register_form span{
+            color: rgb(131, 220, 255);
+            font-size: 18px;
+            font-weight: 100;
+        }
+        .register_form input{
+            background-color: transparent;
+            width: 200px;
+            padding: 2px;
+            text-indent: 2px;
+            color: white;
+            font-size: 20px;
+            height: 45px;
+            margin: 30px 30px 30px 5px;
+            outline: none;
+            border: 0;
+            border-bottom: 1px solid rgb(131, 220, 255);
+        }
+        input::placeholder{
+            color: #d1eefb;
+            font-weight: 100;
+            font-size: 18px;
+            font-style: italic;
+        }
+        .register_form .msg {
+            color: #ff4d4f;
+        }
+
+        .register_btn{
+            background-color: rgba(255, 255, 255, 0.582);
+            border: 1px solid rgb(190, 225, 255);
+            padding: 10px;
+            width: 240px;
+            height: 60px;
+            border-radius: 30px;
+            font-size: 30px;
+            color: rgb(100, 183, 255);
+            font-weight: 100;       
+            margin-top: 15px;
+        }
+        .register_btn:hover{
+            box-shadow: 2px 2px 15px 2px rgb(190, 225, 255);
+            background-color: transparent;
+            color: white;
+            /* 选择动画 */
+            animation: login_mation 0.5s;
+        }
+        
+        .xtx-form-item.pl50 {
+           cursor: pointer;
+        }
+        .xtx-form-item span.iconfont {
+          position: absolute;
+          left: 15px;
+          top: 13px;
+          color: #666;
+          font-size: 18px;
+        }
+
+        .xtx-form-item i {
+          color: #27BA9B;
+          font-size: 14px;
+        }
+        /* 定义动画 */
+        @keyframes login_mation
+        {
+            from {
+                background-color: rgba(255, 255, 255, 0.582);
+                box-shadow: 0px 0px 15px 2px rgb(190, 225, 255);
+            }
+            to {
+                background-color: transparent;
+                color: white;
+                box-shadow: 2px 2px 15px 2px rgb(190, 225, 255);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="register">
+      <h1>注册</h1>
+        <form>
+          <div class="register_form">
+            <div>
+              <span>账号名称：</span>
+              <input name="username" type="text" placeholder="请输入账号名称">
+              <div class="msg"></div>
+            </div>
+            <div>
+              <span>设置密码：</span>
+              <input name="password" type="password" placeholder="请设置账号密码">
+              <div class="msg"></div>
+            </div>
+            <div>
+              <span>确认密码：</span>
+              <input name="confirm" type="password" placeholder="请再次输入上面密码">
+              <div class="msg"></div>
+            </div>
+        </div>
+          <div class="xtx-form-item pl50">
+              <input type="checkbox" id="agree-checkbox" />
+              <i class="iconfont icon-queren"></i>
+              已阅读并同意<i>《用户服务协议》</i>
+          </div>
+          <div class="btn">
+              <button class="register_btn submit" onclick="login()">提&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;交</button>
+          </div>
+        </form>
+    </div>
+    
+    <script>
+    //验证用户名
+    const username = document.querySelector('[name=username]')
+    username.addEventListener('change',verifyName)
+    //封装verifyName函数
+    function verifyName(){
+        const span = username.nextElementSibling
+       const reg =  /^[a-zA-Z0-9-_]{2,8}$/
+       if(!reg.test(username.value)){
+         span.innerText = '输入不合法，请输入2-8位的包含数字或字母的用户名'
+         return false    
+       }
+         span.innerText = ''
+         return true
+    }
+
+    // 5. 验证的是密码框
+    const password = document.querySelector('[name=password]')
+    password.addEventListener('change', verifyPwd)
+    function verifyPwd() {
+      const span = password.nextElementSibling
+      // 5.4 定规则  密码
+      const reg = /^[a-zA-Z0-9-_]{6,20}$/
+      if (!reg.test(password.value)) {
+        span.innerText = '输入不合法,6~20位数字或字母组成'
+        return false
+      }
+      span.innerText = ''
+      return true
+    }
+
+    // 6. 密码的再次验证
+    const confirm = document.querySelector('[name=confirm]')
+    confirm.addEventListener('change', verifyConfirm)
+    function verifyConfirm() {
+      const span = confirm.nextElementSibling
+      // 6.4 当前表单的值不等于 密码框的值就是错误的
+      if (confirm.value !== password.value) {
+        span.innerText = '两次密码输入不一致'
+        return false
+      }
+      // 6.5 合法的 就清空span
+      span.innerText = ''
+      return true
+    }
+
+    // 8. 提交模块
+    const form = document.querySelector('form')
+    const agreeCheckbox = document.getElementById("agree-checkbox");
+    form.addEventListener('submit', function (e) {
+      // 判断是否勾选我同意模块 ，如果有 icon-queren2说明就勾选了，否则没勾选
+      if (!agreeCheckbox.checked) {
+        alert('请勾选同意协议')
+        // 阻止提交
+        e.preventDefault()
+      }
+      // 依次判断上面的每个框框 是否通过，只要有一个没有通过的就阻止
+      if (!verifyName()) {
+        e.preventDefault()
+      }
+      if (!verifyPwd()) {
+        e.preventDefault()
+      }
+      if (!verifyConfirm()){
+        e.preventDefault()
+      } 
+    })
+    </script>
+</body>
+
+
+
+</html>
+
