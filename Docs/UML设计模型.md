@@ -122,13 +122,13 @@
 
 ## 三、 系统分析
 
-![image-20230512140245415](/Users/zeyishen/Library/Application Support/typora-user-images/image-20230512140245415.png)
+![系统分析](/Users/zeyishen/eIAS/Docs/UML设计模型图片/系统分析.png)
 
 ## 四、基本接口
 
 ### 4.1广告信息
 
-![image-20230512145413047](/Users/zeyishen/Library/Application Support/typora-user-images/image-20230512145413047.png)
+![database_ad](/Users/zeyishen/eIAS/Docs/UML设计模型图片/database_ad.png)
 
 - `getAdInfo(userId: Int)`:获取指定用户的广告列表。
 - `setAdInfo(adText：varchar)`: 设置指定用户的广告。
@@ -136,14 +136,14 @@
 
 ### 4.2用户信息
 
-![image-20230512145426359](/Users/zeyishen/Library/Application Support/typora-user-images/image-20230512145426359.png)
+![database_usr](/Users/zeyishen/eIAS/Docs/UML设计模型图片/database_usr.png)
 
 - `getUsrname(userId:Int)`:获取指定用户名.
 - `setUsername(Usrname：varchar)`: 设置用户名。
 
 ### 4.3支付接口
 
-![image-20230512145439808](/Users/zeyishen/Library/Application Support/typora-user-images/image-20230512145439808.png)
+![payment](/Users/zeyishen/eIAS/Docs/UML设计模型图片/payment.png)
 
 - `alipay.trade.pay`：发起支付请求
 - `alipay.trade.query`：查询交易状态
@@ -151,7 +151,7 @@
 
 ### 4.4展示接口
 
-![image-20230512145452296](/Users/zeyishen/Library/Application Support/typora-user-images/image-20230512145452296.png)
+![ad_show](/Users/zeyishen/eIAS/Docs/UML设计模型图片/ad_show.png)
 
 - `uploadAd(AdId:Int)`:上传广告
 - `transAd(AdContent:Ad)`:传输广告
@@ -161,65 +161,63 @@
 
 ### 5.1企业用户
 
-<img src="/Users/zeyishen/Library/Application Support/typora-user-images/image-20230512141221388.png" alt="image-20230512141221388" style="zoom:67%;" />
+![企业用户](/Users/zeyishen/eIAS/Docs/UML设计模型图片/企业用户.png)
 
 ### 5.2管理员
 
-<img src="/Users/zeyishen/Library/Application Support/typora-user-images/image-20230512141344119.png" alt="image-20230512141344119" style="zoom:67%;" />
-
-
+![管理员](/Users/zeyishen/eIAS/Docs/UML设计模型图片/管理员.png)
 
 ## 六、功能时序图
 
 ### 6.1用户注册
 
-![image-20230512152341400](/Users/zeyishen/Library/Application Support/typora-user-images/image-20230512152341400.png)
+![用户注册](/Users/zeyishen/eIAS/Docs/UML设计模型图片/用户注册.png)
 
-### 6.2使用服务
+### 6.2购买服务
 
-![image-20230512163313254](/Users/zeyishen/Library/Application Support/typora-user-images/image-20230512163313254.png)
+![购买服务](/Users/zeyishen/eIAS/Docs/UML设计模型图片/购买服务.png)
 
 ### 6.3服务详情
 
-![image-20230512164237214](/Users/zeyishen/Library/Application Support/typora-user-images/image-20230512164237214.png)
+![服务详情](/Users/zeyishen/eIAS/Docs/UML设计模型图片/服务详情.png)
 
 ### 6.4终止服务
 
-![image-20230512163329672](/Users/zeyishen/Library/Application Support/typora-user-images/image-20230512163329672.png)
+![终止服务](/Users/zeyishen/eIAS/Docs/UML设计模型图片/终止服务.png)
 
 ### 6.5支付服务
 
-![image-20230512163613510](/Users/zeyishen/Library/Application Support/typora-user-images/image-20230512163613510.png)
+![支付服务](/Users/zeyishen/eIAS/Docs/UML设计模型图片/支付服务.png)
 
 ## 七、数据库设计
 
 ### 7.1用户基本信息
 
-![image-20230512164354552](/Users/zeyishen/Library/Application Support/typora-user-images/image-20230512164354552.png)
+![用户基本信息](/Users/zeyishen/eIAS/Docs/UML设计模型图片/用户基本信息.png)
 
 ### 7.2管理员基本信息
 
-![image-20230512164420622](/Users/zeyishen/Library/Application Support/typora-user-images/image-20230512164420622.png)
+![管理员基本信息](/Users/zeyishen/eIAS/Docs/UML设计模型图片/管理员基本信息.png)
 
 ### 7.3用户反馈信息
 
-![image-20230512164433741](/Users/zeyishen/Library/Application Support/typora-user-images/image-20230512164433741.png)
+![用户反馈信息](/Users/zeyishen/eIAS/Docs/UML设计模型图片/用户反馈信息.png)
 
 ### 7.4广告交易信息
 
-![image-20230512164450428](/Users/zeyishen/Library/Application Support/typora-user-images/image-20230512164450428.png)
+![广告交易信息](/Users/zeyishen/eIAS/Docs/UML设计模型图片/广告交易信息.png)
 
 ### 7.5广告服务信息
 
-![image-20230512164504614](/Users/zeyishen/Library/Application Support/typora-user-images/image-20230512164504614.png)
+![广告服务信息](/Users/zeyishen/eIAS/Docs/UML设计模型图片/广告服务信息.png)
 
 ### 7.6支付信息
 
-![image-20230512164515352](/Users/zeyishen/Library/Application Support/typora-user-images/image-20230512164515352.png)
+![支付信息](/Users/zeyishen/eIAS/Docs/UML设计模型图片/支付信息.png)
 
 ### 7.7帮助文档
 
-![image-20230512164533244](/Users/zeyishen/Library/Application Support/typora-user-images/image-20230512164533244.png)
+![帮助文档](/Users/zeyishen/eIAS/Docs/UML设计模型图片/帮助文档.png)
 
 ## 八、开发环境
 
