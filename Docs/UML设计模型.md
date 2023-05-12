@@ -122,13 +122,13 @@
 
 ## 三、 系统分析
 
-![系统分析](/Users/zeyishen/eIAS/Docs/UML设计模型图片/系统分析.png)
+![系统分析](Docs/UML设计模型图片/系统分析.png)
 
 ## 四、基本接口
 
 ### 4.1广告信息
 
-![database_ad](/Users/zeyishen/eIAS/Docs/UML设计模型图片/database_ad.png)
+![database_ad](Docs/UML设计模型图片/database_ad.png)
 
 - `getAdInfo(userId: Int)`:获取指定用户的广告列表。
 - `setAdInfo(adText：varchar)`: 设置指定用户的广告。
@@ -136,7 +136,7 @@
 
 ### 4.2用户信息
 
-![database_usr](/Users/zeyishen/eIAS/Docs/UML设计模型图片/database_usr.png)
+![database_usr](/eIAS/Docs/UML设计模型图片/database_usr.png)
 
 - `getUsrname(userId:Int)`:获取指定用户名.
 - `setUsername(Usrname：varchar)`: 设置用户名。
