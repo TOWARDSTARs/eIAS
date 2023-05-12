@@ -1,3 +1,104 @@
+/* 全局样式 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* 页头样式 */
+  header {
+    height: 60px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 50px;
+    padding: 5px;
+  }
+  
+  .user img {
+    height: 50px;
+    padding: 5px;
+  }
+  
+  /* 导航栏样式 */
+  nav {
+    width: 200px;
+    background-color: #f2f2f2;
+    height: 100%;
+    float: left;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  nav li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  nav li a:hover {
+    background-color: #ddd;
+  }
+  
+  /* 主体内容样式 */
+  main {
+    margin-left: 200px;
+    padding: 20px;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*基本字体*/
 *{
     font-family: SmileySans;
     font-style: italic;
