@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>亿点广告EIAS</title>
+    <script src="https://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <style>img{
+        max-width: 100%;
+        height: auto;
+    }   
+    </style>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="#"><img src="logo.png" alt="Logo"></a>
+      </div>
+      <div class="user">
+        <a href="#"><img src="user.png" alt="User"></a>
+      </div>
+    </header>
+      <nav>
+        <div class="info-meu">
+          <ul>
+              <li onclick="showPanal1(this)">
+                  <a href="#panal1">购买推广</a>
+              </li>
+              <li onclick="showPanal1(this)">
+                  <a href="#panal2">我的服务</a>
+              </li>
+              <li onclick="showPanal1(this)">
+                  <a href="##">财务管理</a>
+              </li>
+              <li onclick="showPanal1(this)">
+                  <a href="##">账号管理</a>
+              </li>
+              <li onclick="showPanal1(this)">
+                  <a href="##">使用帮助</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="right">
+
+        <div class="panal" style="display: block;">
+            <!-- <div class="tab">
+                <a href="##" class="on" onclick="showLi(this)">000000000</a>
+                <a href="##" onclick="showLi(this)">产品消息</a>
+                <a href="##" onclick="showLi(this)">安全消息</a>
+            </div>
+            <div class="content">
+                <ul>
+                    <li style="display:block;">全部类型消息</li>
+                    <li>产品消息</li>
+                    <li>安全消息</li>
+                </ul>
+            </div> -->
+        </div>
+
+        <div class="panal" style="display: block;">
+            <!-- <div class="tab">
+                <a href="##" class="on" onclick="showLi(this)">1111111111</a>
+                <a href="##" onclick="showLi(this)">产品消息1</a>
+                <a href="##" onclick="showLi(this)">安全消息1</a>
+            </div>
+            <div class="content">
+                <ul>
+                    <li style="display:block;">全部类型消息1</li>
+                    <li>产品消息1</li>
+                    <li>安全消息1</li>
+                </ul>
+            </div> -->
+        </div>
+
+        <div class="panal" style="display: block;">
+            <div class="tab">
+                <a href="##" class="on" onclick="showLi(this)">账户充值</a>
+                <a href="##" onclick="showLi(this)">账户流水</a>
+            </div>
+            <div class="content">
+                <ul>
+                    <li style="display:block;">全部类型消息2</li>
+                    <li>产品消息2</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="panal" style="display: block;">
+            <div class="tab">
+                <!-- <a href="##" class="on" onclick="showLi(this)">账户充值</a>
+                <a href="##" onclick="showLi(this)">账户流水</a> -->
+            </div>
+            <div class="content">
+                <!-- <ul>
+                    <li style="display:block;">全部类型消息2</li>
+                    <li>产品消息2</li>
+                </ul> -->
+            </div>
+        </div>
+
+        <div class="panal" style="display: block;">
+            <div class="tab">
+                <a href="##" class="on" onclick="showLi(this)">帮助文档</a>
+                <a href="##" onclick="showLi(this)">联系我们</a>
+                <a href="##" onclick="showLi(this)">Q&A</a>
+            </div>
+            <div class="content">
+                <ul>
+                    <li style="display:block;">全部类型消息2</li>
+                    <li>产品消息2</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+      function showLi(obj) {
+          $(obj).addClass('on').siblings().removeClass('on');
+          var index = $(obj).index();
+          //console.log($(obj).parent().parent())
+          $(obj).parent().parent().find('.content li').hide();
+          $(obj).parent().parent().find('.content li:eq(' + index + ')').show();
+      }
+      
+      function showPanal1(obj) {
+          $(obj).addClass('bag').siblings().removeClass('bag');
+          var _index = $(obj).index();
+          $('.panal').eq(_index).show('fast').siblings().hide('fast');
+      }
+      </script>
+      
+  </body>
+</html>
