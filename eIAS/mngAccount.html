@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Manage Account</title>
+  <style>
+    .form-field {
+      margin-bottom: 10px;
+    }
+
+    .form-field label {
+      display: block;
+      font-weight: bold;
+    }
+
+    .form-field input {
+      width: 200px;
+    }
+
+    .edit-mode input {
+      background-color: #f0f0f0;
+    }
+
+    .btn-container {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+ 
+</body>
+</html>
+
+<!-- Path: mngAd.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>亿点广告EIAS</title>
+    <style>img{
+        max-width: 100%;
+        height: auto;
+    }   
+    </style>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/mngAccount.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="主页.html"><img src="logo.png" alt="Logo"></a>
+      </div>
+      <div class="user">
+        <a href="#"><img src="user.png" alt="User"></a>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="purchase.html">购买推广</a></li>
+        <li><a href="mngAd.html">推广管理</a></li>
+        <li><a href="mngFund.html">财务管理</a></li>
+        <li><a href="mngAccount.html">账号管理</a></li>
+        <li><a href="help.html">使用帮助</a></li>
+      </ul>
+    </nav>    
+    <main>
+      <!-- 主体内容放在这里 -->
+      <h1>账号管理</h1>
+      <h2 style="font-family: 'Smiley Sans'; font-weight: normal; font-style: italic;">Account Management</h2>
+      <img src="" alt="About us">
+      <p>网页示例文本。</p>
+      <div class="form-field">
+        <label for="username">Username:</label>
+        <input id="username" type="text" readonly>
+      </div>
+      <div class="form-field">
+        <label for="company">Company:</label>
+        <input id="company" type="text" readonly>
+      </div>
+      <div class="btn-container">
+        <button id="editBtn">Edit</button>
+        <button id="changeEmailBtn">Change Email</button>
+        <button id="changePasswordBtn">Change Password</button>
+      </div>
+    
+    </main>
+  </body>
+</html>

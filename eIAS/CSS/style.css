@@ -106,10 +106,10 @@ body {
 
 @font-face {
     font-family: 'SmileySans';
-    src: url('/Users/zeyishen/Desktop/workspace/code/web/css/Font/SmileySans.ttf.woff2') format('woff2'),
-         url('/Users/zeyishen/Desktop/workspace/code/web/css/Font/SmileySans.ttf') format('truetype'),
-         url('/Users/zeyishen/Desktop/workspace/code/web/css/Font/SmileySans-Oblique.woff2') format('woff2'),
-         url('/Users/zeyishen/Desktop/workspace/code/web/css/Font/SmileySans-Oblique.woff') format('woff');
+    src: url('Font/SmileySans.ttf.woff2') format('woff2'),
+         url('Font/SmileySans.ttf') format('truetype'),
+         url('Font/SmileySans-Oblique.woff2') format('woff2'),
+         url('Font/SmileySans-Oblique.woff') format('woff');
     font-weight: normal;
     font-style: italic;
 }

@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>后台管理</title>
+<script src="https://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<style>
+* {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+body {
+	font-size:15px;
+	color:#666;
+	text-align:left;
+}
+.bag {
+	background:rgb(167, 201, 226);
+}
+.panal {
+	width:500px;
+	height:720px;
+	background:#f0f0f0;
+	float:right;
+	display:none;
+}
+.panal .tab {
+	overflow:hidden;
+	background:gainsboro;
+}
+.panal .tab a {
+	display:block;
+	padding:10px 20px;
+	float:left;
+	text-decoration:none;
+	color:#333;
+}
+.panal .tab a:hover {
+	background:gray;
+	color:#fff;
+	text-decoration:none;
+}
+.panal .tab a.on {
+	background:gray;
+	text-decoration:none;
+	color:white;
+}
+.panal .content {
+	overflow:hidden;
+	padding:10px;
+}
+.panal .content li {
+	display:none;
+}
+/*arcile*/
+			
+.comma {
+	background:#f2f2f2;
+	
+}
+.arcile {
+	width:220px;
+	height:700px;
+	background:gainsboro;
+	float:left;
+	text-align:center;
+	padding:10px 0;
+}
+.info-ul>ul li {
+	list-style:none;
+	line-height:20px;
+	float:left;
+	margin:10px 0 0 15%;
+}
+.info-img {
+	width:50%;
+	padding:5px;
+	background:white;
+	margin:22%;
+}
+.info-meu>ul li a {
+	text-decoration:none;
+	line-height:30px;
+	width:100%;
+	color:black;
+}
+.info-meu>ul li a:hover {
+	color:rgb(144, 165, 224);
+}
+</style>
+</head>
+<body>
+<h2>elAS</h2>
+<hr>
+<div class="comma">
+    <div class="" style="width: 720px;margin: 0 auto;">
+        <div class="arcile">
+            <span href="## " class="name_tit ">jd_vinn670</span>
+
+            <div class="info-meu">
+                <ul>
+                    <li onclick="showPanal1(this)">
+                        <a href="#panal1">购买推广</a>
+                    </li>
+                    <li onclick="showPanal1(this)">
+                        <a href="#panal2">我的服务</a>
+                    </li>
+                    <li onclick="showPanal1(this)">
+                        <a href="##">财务管理</a>
+                    </li>
+                    <li onclick="showPanal1(this)">
+                        <a href="##">账号管理</a>
+                    </li>
+                    <li onclick="showPanal1(this)">
+                        <a href="##">使用帮助</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="">
+
+            <div class="panal" style="display: block;">
+                <div class="tab">
+                    <a href="##" class="on" onclick="showLi(this)">000000000</a>
+                    <a href="##" onclick="showLi(this)">产品消息</a>
+                    <a href="##" onclick="showLi(this)">安全消息</a>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li style="display:block;">全部类型消息</li>
+                        <li>产品消息</li>
+                        <li>安全消息</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="panal" style="display: block;">
+                <div class="tab">
+                    <a href="##" class="on" onclick="showLi(this)">1111111111</a>
+                    <a href="##" onclick="showLi(this)">产品消息1</a>
+                    <a href="##" onclick="showLi(this)">安全消息1</a>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li style="display:block;">全部类型消息1</li>
+                        <li>产品消息1</li>
+                        <li>安全消息1</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="panal" style="display: block;">
+                <div class="tab">
+                    <a href="##" class="on" onclick="showLi(this)">账户充值</a>
+                    <a href="##" onclick="showLi(this)">账户流水</a>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li style="display:block;">全部类型消息2</li>
+                        <li>产品消息2</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="panal" style="display: block;">
+                <div class="tab">
+                    <a href="##" class="on" onclick="showLi(this)">账户充值</a>
+                    <a href="##" onclick="showLi(this)">账户流水</a>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li style="display:block;">全部类型消息2</li>
+                        <li>产品消息2</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="panal" style="display: block;">
+                <div class="tab">
+                    <a href="##" class="on" onclick="showLi(this)">账户充值</a>
+                    <a href="##" onclick="showLi(this)">账户流水</a>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li style="display:block;">全部类型消息2</li>
+                        <li>产品消息2</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<script>
+function showLi(obj) {
+    $(obj).addClass('on').siblings().removeClass('on');
+    var index = $(obj).index();
+    //console.log($(obj).parent().parent())
+    $(obj).parent().parent().find('.content li').hide();
+    $(obj).parent().parent().find('.content li:eq(' + index + ')').show();
+}
+
+function showPanal1(obj) {
+    $(obj).addClass('bag').siblings().removeClass('bag');
+    var _index = $(obj).index();
+    $('.panal').eq(_index).show('fast').siblings().hide('fast');
+}
+</script>
+
+</body>
+</html>
