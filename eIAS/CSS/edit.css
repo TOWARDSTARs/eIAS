@@ -1,0 +1,17 @@
+.icon-button {
+    background-color: transparent;
+    background-size: contain;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    background-image: url("Pics/edit.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 16px; /* 设置合适的宽度 */
+    height: 16px; /* 设置合适的高度 */
+} 
+
+.edit-mode input {
+    background-color: #f0f0f0;
+  }
