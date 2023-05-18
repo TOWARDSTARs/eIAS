@@ -18,7 +18,12 @@ body {
   .logo img {
     height: 50px;
     padding: 5px;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
   }
+ 
   
   .user img {
     height: 50px;
@@ -49,11 +54,17 @@ body {
     text-decoration: none;
     color: #333;
   }
-  
+
+
   nav li a:hover {
     background-color: #ddd;
   }
-  
+
+  header div h1 a{
+    text-decoration: none;
+    color: #ffffff;
+  }
+
   /* 主体内容样式 */
   main {
     margin-left: 200px;
