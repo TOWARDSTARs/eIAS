@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>亿点广告EIAS</title>
+    <script src="https://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <style>img{
+        max-width: 100%;
+        height: auto;
+    }   
+    </style>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="#"><img src="logo.png" alt="Logo"></a>
+      </div>
+      <div class="user">
+        <a href="#"><img src="user.png" alt="User"></a>
+      </div>
+    </header>
+      <nav>
+        <div class="info-meu">
+          <ul>
+              <li onclick="showPanal1(this)">
+                  <a href="#panal1">推广管理</a>
+              </li>
+              <li onclick="showPanal1(this)">
+                  <a href="#panal2">审核</a>
+              </li>
+              <li onclick="showPanal1(this)">
+                  <a href="##">退款确认</a>
+              </li>
+              <li onclick="showPanal1(this)">
+                  <a href="##">文档更新</a>
+              </li>
+              <li onclick="showPanal1(this)">
+                  <a href="##">用户协议更改</a>
+              </li>
+              <li onclick="showPanal1(this)">
+                <a href="##">反馈处理</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="right">
+
+        <div class="panal" style="display: block;">
+            <!-- <div class="tab">
+                <a href="##" class="on" onclick="showLi(this)">000000000</a>
+                <a href="##" onclick="showLi(this)">产品消息</a>
+                <a href="##" onclick="showLi(this)">安全消息</a>
+            </div>
+            <div class="content">
+                <ul>
+                    <li style="display:block;">全部类型消息</li>
+                    <li>产品消息</li>
+                    <li>安全消息</li>
+                </ul>
+            </div> -->
+        </div>
+
+        <div class="panal" style="display: block;">
+            <!-- <div class="tab">
+                <a href="##" class="on" onclick="showLi(this)">1111111111</a>
+                <a href="##" onclick="showLi(this)">产品消息1</a>
+                <a href="##" onclick="showLi(this)">安全消息1</a>
+            </div>
+            <div class="content">
+                <ul>
+                    <li style="display:block;">全部类型消息1</li>
+                    <li>产品消息1</li>
+                    <li>安全消息1</li>
+                </ul>
+            </div> -->
+        </div>
+
+        <div class="panal" style="display: block;">
+            <div class="tab">
+                <a href="##" class="on" onclick="showLi(this)">账户充值</a>
+                <a href="##" onclick="showLi(this)">账户流水</a>
+            </div>
+            <div class="content">
+                <ul>
+                    <li style="display:block;">全部类型消息2</li>
+                    <li>产品消息2</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="panal" style="display: block;">
+            <div class="tab">
+                <a href="##" class="on" onclick="showLi(this)">帮助文档</a>
+                <a href="##" onclick="showLi(this)">联系我们</a>
+                <a href="##" onclick="showLi(this)">Q&A</a>
+            </div>
+            <div class="content">
+                <!-- <ul>
+                    <li style="display:block;">全部类型消息2</li>
+                    <li>产品消息2</li>
+                </ul> -->
+            </div>
+        </div>
+
+        <div class="panal" style="display: block;">
+            <div class="tab">
+                <h1>用户协议</h1>
+                    <div id="agreement">
+                      <p>在此特别提醒您在注册成为用户之前，请认真阅读本《服务协议》（以下简称“协议”），确保您充分理解本协议中的各项条款。请您谨慎阅读并选择接受或不接受本协议。除非您接受本协议所有条款a否则您无权注册、登录或使用本协议所涉服务。您的注册、登录、使用等行为将视为对本协议的接受，并同意接受本协议各项条款的约束。本协议约定我方与用户之间关于App软件服务（以下简称“服务”）的权利义务。用户，是指注册、登录、使用本服务的个人或组织。本协议可由我方随时更新，更新后的协议条款一旦公布即代替原来的协议条款，恕不再另行通知，用户可在本App中查阅最新版协议条款。在修改协议条款后，如果用户不接受修改后的条款，请立即停止使用我方提供的服务，用户继续使用我方提供的服务将被视为接受修改后的协议。</p>
+                    </div>
+                    <div class="container">
+                        <input type="button" class="button" id="editButton" value="修改">
+                            <div id="editor" contenteditable="true" style="display: none;"></div>
+                        <input type="button" class="button" id="saveButton" value="保存">
+                    </div>                  
+            </div>
+            <div class="content">
+                <ul>
+                    <li style="display:block;">全部类型消息2</li>
+                    <li>产品消息2</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="panal" style="display: block;">
+            <!-- <div class="tab">
+                <a href="##" class="on" onclick="showLi(this)">1111111111</a>
+                <a href="##" onclick="showLi(this)">产品消息1</a>
+                <a href="##" onclick="showLi(this)">安全消息1</a>
+            </div>
+            <div class="content">
+                <ul>
+                    <li style="display:block;">全部类型消息1</li>
+                    <li>产品消息1</li>
+                    <li>安全消息1</li>
+                </ul>
+            </div> -->
+        </div>
+    </div>
+
+    
+      
+  </body>
+</html>
