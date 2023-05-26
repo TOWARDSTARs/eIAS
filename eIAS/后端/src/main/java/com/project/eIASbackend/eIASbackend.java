@@ -1,0 +1,12 @@
+package com.project.eIASbackend;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class eIASbackend{
+
+    public static void main(String[] args) {
+        SpringApplication.run(eIASbackend.class, args);
+    }
+}
