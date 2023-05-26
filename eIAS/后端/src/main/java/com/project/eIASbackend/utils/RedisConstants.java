@@ -1,4 +1,4 @@
-package com.project.documentretrievalmanagementsystem.utils;
+package com.project.eIASbackend.utils;
 
 public class RedisConstants {
     public static final String LOGIN_USER_KEY = "login:token:";

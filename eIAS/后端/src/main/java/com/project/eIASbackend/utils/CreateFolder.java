@@ -1,10 +1,10 @@
-package com.project.documentretrievalmanagementsystem.utils;
+package com.project.eIASbackend.utils;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.project.documentretrievalmanagementsystem.entity.Material;
-import com.project.documentretrievalmanagementsystem.mapper.MaterialMapper;
-import com.project.documentretrievalmanagementsystem.service.impl.MaterialServiceImpl;
+import com.project.eIASbackend.entity.Material;
+import com.project.eIASbackend.mapper.MaterialMapper;
+import com.project.eIASbackend.service.impl.MaterialServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
@@ -15,10 +15,10 @@ import java.util.List;
 import static com.baomidou.mybatisplus.extension.toolkit.SimpleQuery.list;
 
 /************************
- * DocumentRetrievalManagementSystem
- * com.project.documentretrievalmanagementsystem.utils
+ * eIASbackend
+ * com.project.eIASbackend.utils
  * MHC
- * author : mhc
+ * author : zxin
  * date:  2023/5/16 16:44
  * description : 
  ************************/

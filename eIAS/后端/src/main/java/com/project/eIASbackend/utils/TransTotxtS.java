@@ -1,4 +1,4 @@
-package com.project.documentretrievalmanagementsystem.utils;
+package com.project.eIASbackend.utils;
 
 
 import java.io.FileInputStream;
@@ -18,11 +18,11 @@ import org.springframework.stereotype.Component;
 
 
 /************************
- * DocumentRetrievalManagementSystem
- * com.project.documentretrievalmanagementsystem.utils
+ * eIASbackend
+ * com.project.eIASbackend.utils
  * MHC
- * author : mhc
- * date:  2023/4/24 19:30
+ * author : zxin
+ * date:  2023/5/24 19:30
  * description : 将各种格式的文档转换为txt格式，便于调用算法接口来产生概要
  ************************/
 

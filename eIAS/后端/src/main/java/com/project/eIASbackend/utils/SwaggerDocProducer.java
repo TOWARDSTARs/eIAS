@@ -1,4 +1,4 @@
-package com.project.documentretrievalmanagementsystem.utils;
+package com.project.eIASbackend.utils;
 
 import io.github.swagger2markup.Swagger2MarkupConfig;
 import io.github.swagger2markup.Swagger2MarkupConverter;

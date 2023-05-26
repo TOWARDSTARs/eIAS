@@ -1,4 +1,4 @@
-package com.project.documentretrievalmanagementsystem.utils;
+package com.project.eIASbackend.utils;
 
 import org.apache.poi.xwpf.extractor.XWPFWordExtractor;
 import org.apache.poi.xwpf.usermodel.XWPFDocument;
@@ -7,8 +7,8 @@ import java.io.*;
 
 
 /************************
- * DocumentRetrievalManagementSystem
- * com.project.documentretrievalmanagementsystem.utils
+ * eIASbackend
+ * com.project.eIASbackend.utils
  * MHC
  * author : mhc
  * date:  2023/4/29 0:56
