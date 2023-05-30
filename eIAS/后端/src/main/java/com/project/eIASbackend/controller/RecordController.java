@@ -1,4 +1,4 @@
-package com.project.documentretrievalmanagementsystem.controller;
+package com.project.eIASbackend.controller;
 
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;

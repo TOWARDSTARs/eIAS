@@ -1,3 +1,4 @@
+//配置 Web 应用的初始化
 package com.project.eIASbackend.config;
 
 import org.springframework.web.WebApplicationInitializer;
