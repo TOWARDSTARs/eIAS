@@ -1,7 +1,5 @@
-package service;
+package com.project.eIASbackend.service;
 
-import com.project.eIASbackend.service.IAdService;
-import com.project.eIASbackend.service.IMaterialService;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

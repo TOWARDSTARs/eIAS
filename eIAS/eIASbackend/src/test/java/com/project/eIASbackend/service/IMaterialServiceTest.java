@@ -1,4 +1,4 @@
-package service;
+package com.project.eIASbackend.service;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.github.pagehelper.PageHelper;
@@ -10,9 +10,6 @@ import com.project.eIASbackend.dto.UserDto;
 import com.project.eIASbackend.entity.Material;
 import com.project.eIASbackend.entity.Project;
 import com.project.eIASbackend.entity.User;
-import com.project.eIASbackend.service.IMaterialService;
-import com.project.eIASbackend.service.IProjectService;
-import com.project.eIASbackend.service.IUserService;
 import com.project.eIASbackend.service.impl.MaterialServiceImpl;
 import com.project.eIASbackend.service.impl.ProjectServiceImpl;
 import org.apache.commons.io.IOUtils;

@@ -1,4 +1,4 @@
-package service;
+package com.project.eIASbackend.service;
 
 import com.project.eIASbackend.service.impl.FileServiceImpl;
 import org.apache.http.entity.ContentType;
@@ -63,8 +63,8 @@ class FileServiceTest {
 
         // 检查是否成功保存了文件并返回了正确的文件名
         File savedFile = new File(basePath + filename);
-        Assertions.assertTrue(savedFile.exists());
-        Assertions.assertEquals(filename, result);
+        assertTrue(savedFile.exists());
+        assertEquals(filename, result);
 
         // 删除保存的文件
         savedFile.delete();
@@ -87,22 +87,22 @@ class FileServiceTest {
         ResponseEntity<byte[]> responseEntity = fileService.download(mockSession, myBasePath,"test.txt");
 
         // 验证返回结果是否正确
-        Assertions.assertNotNull(responseEntity);
-        Assertions.assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
-        Assertions.assertEquals(fileContent.getBytes(StandardCharsets.UTF_8).length, responseEntity.getBody().length);
+        assertNotNull(responseEntity);
+        assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
+        assertEquals(fileContent.getBytes(StandardCharsets.UTF_8).length, responseEntity.getBody().length);
 
         // 验证响应头信息是否正确
         HttpHeaders headers = responseEntity.getHeaders();
-        Assertions.assertNotNull(headers);
-        Assertions.assertTrue(headers.containsKey(HttpHeaders.CONTENT_DISPOSITION));
+        assertNotNull(headers);
+        assertTrue(headers.containsKey(HttpHeaders.CONTENT_DISPOSITION));
         String expectedDisposition = "attachment;filename=" + fileName +"";
-        Assertions.assertEquals(expectedDisposition, headers.getFirst(HttpHeaders.CONTENT_DISPOSITION));
+        assertEquals(expectedDisposition, headers.getFirst(HttpHeaders.CONTENT_DISPOSITION));
 
         // 验证响应内容是否正确
         InputStream is = new ByteArrayInputStream(responseEntity.getBody());
         byte[] actualBytes = new byte[is.available()];
         is.read(actualBytes);
-        Assertions.assertArrayEquals(fileContent.getBytes(StandardCharsets.UTF_8), actualBytes);
+        assertArrayEquals(fileContent.getBytes(StandardCharsets.UTF_8), actualBytes);
 
         // 清理临时文件
         Files.deleteIfExists(file);
@@ -110,8 +110,8 @@ class FileServiceTest {
 
     @Test
     void testDownload() throws IOException {
-        HttpServletResponse response = Mockito.mock(HttpServletResponse.class);
-        ServletOutputStream outputStream = Mockito.mock(ServletOutputStream.class);
+        HttpServletResponse response = mock(HttpServletResponse.class);
+        ServletOutputStream outputStream = mock(ServletOutputStream.class);
         //返回一个输出流
         Mockito.when(response.getOutputStream()).thenReturn(outputStream);
 
@@ -128,11 +128,11 @@ class FileServiceTest {
 
         fileService.downloadFile(response, location);
 
-        Mockito.verify(response).addHeader(ArgumentMatchers.eq("Content-Disposition"), ArgumentMatchers.eq("attachment;filename=" + encodedFileName));
-        Mockito.verify(response).addHeader(ArgumentMatchers.eq("Content-Length"), ArgumentMatchers.eq(String.valueOf(byteArrayOutputStream.size())));
-        Mockito.verify(response).setHeader(ArgumentMatchers.eq("filename"), ArgumentMatchers.eq(fileName));
-        Mockito.verify(response).setContentType(ArgumentMatchers.eq("application/octet-stream"));
-        Mockito.verify(outputStream).write(ArgumentMatchers.eq(byteArrayOutputStream.toByteArray()));
+        verify(response).addHeader(eq("Content-Disposition"), eq("attachment;filename=" + encodedFileName));
+        verify(response).addHeader(eq("Content-Length"), eq(String.valueOf(byteArrayOutputStream.size())));
+        verify(response).setHeader(eq("filename"), eq(fileName));
+        verify(response).setContentType(eq("application/octet-stream"));
+        verify(outputStream).write(eq(byteArrayOutputStream.toByteArray()));
     }
 
 }

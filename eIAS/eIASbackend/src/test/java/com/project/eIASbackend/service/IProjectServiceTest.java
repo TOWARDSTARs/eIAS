@@ -1,11 +1,9 @@
-package service;
+package com.project.eIASbackend.service;
 
 import com.project.eIASbackend.dto.ProjectDto;
 import com.project.eIASbackend.dto.SimilarityDto;
 import com.project.eIASbackend.entity.Project;
 import com.project.eIASbackend.mapper.ProjectMapper;
-import com.project.eIASbackend.service.IAdService;
-import com.project.eIASbackend.service.IProjectService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

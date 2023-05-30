@@ -1,4 +1,4 @@
-package service;
+package com.project.eIASbackend.service;
 
 import com.project.eIASbackend.entity.User;
 import com.project.eIASbackend.exception.HaveDisabledException;
@@ -44,9 +44,9 @@ class IUserServiceTest {
         user.setUserName("myy");
         user.setPassword("51888");
         user.setStatus(0);
-        Mockito.when(userMapper.selectOne(ArgumentMatchers.any())).thenReturn(user);
+        when(userMapper.selectOne(any())).thenReturn(user);
         // When & Then
-        Assertions.assertThrows(HaveDisabledException.class, () -> userServiceImpl.login(requestBody, session));
+        assertThrows(HaveDisabledException.class, () -> userServiceImpl.login(requestBody, session));
     }
 
 
@@ -62,9 +62,9 @@ class IUserServiceTest {
         user.setUserName("pxm");
         user.setPassword("12345");
         user.setStatus(1);
-        Mockito.when(userMapper.selectOne(ArgumentMatchers.any())).thenReturn(user);
+        when(userMapper.selectOne(any())).thenReturn(user);
         // When & Then
-        Assertions.assertThrows(PasswordWrongException.class, () -> userServiceImpl.login(requestBody, session));
+        assertThrows(PasswordWrongException.class, () -> userServiceImpl.login(requestBody, session));
 
     }
 }

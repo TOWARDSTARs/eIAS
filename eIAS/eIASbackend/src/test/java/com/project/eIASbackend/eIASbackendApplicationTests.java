@@ -1,4 +1,4 @@
-package ;
+package com.project.eIASbackend;
 
 import com.github.pagehelper.PageInfo;
 import com.project.eIASbackend.dto.EsQueryDto;
