@@ -1,0 +1,20 @@
+  h1{
+    text-align: center;
+  }
+  h2{
+    text-align: left;
+  }
+  
+.container {
+    width: 100%;
+}
+.image-container {
+    float: left; 
+    width: 40%;
+}
+.text-container {
+    float: right; 
+    width: 60%;
+}
+
+  

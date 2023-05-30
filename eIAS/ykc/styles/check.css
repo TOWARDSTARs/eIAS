@@ -1,0 +1,93 @@
+  table {
+    width:800px;
+    margin:25px auto;
+    /*height:auto;
+    */
+  }
+  h2{
+    text-align: center;
+  }
+  td,th {
+    text-align:center;
+    height:100px;
+    width:100px;
+  }
+  button {
+    margin-left:40px;
+    width:100px;
+    height:30px;
+  }
+  button:hover {
+    color:cyan;
+  }
+  thead {
+    background:#b1aff4;
+  }
+  tbody {
+    background:#e5f4af;
+  }
+  tfoot {
+    background:#aff4eb;
+  }
+  td {
+    word-break:normal;
+    width: auto;
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*基本字体*/
+*{
+    font-family: SmileySans;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SmileySans';
+    src: url('/Users/zeyishen/Desktop/workspace/code/web/css/Font/SmileySans.ttf.woff2') format('woff2'),
+         url('/Users/zeyishen/Desktop/workspace/code/web/css/Font/SmileySans.ttf') format('truetype'),
+         url('/Users/zeyishen/Desktop/workspace/code/web/css/Font/SmileySans-Oblique.woff2') format('woff2'),
+         url('/Users/zeyishen/Desktop/workspace/code/web/css/Font/SmileySans-Oblique.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+/*
+@font-face {
+    font-family: 'SmileySans';
+    src: url('SmileySans-Oblique.woff2') format('woff2'),
+        url('SmileySans-Oblique.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
