@@ -1,9 +1,9 @@
-package com.project.documentretrievalmanagementsystem.service;
+package com.project.eIASbackend.service;
 
-import com.project.documentretrievalmanagementsystem.dto.ProjectDto;
-import com.project.documentretrievalmanagementsystem.dto.SimilarityDto;
-import com.project.documentretrievalmanagementsystem.entity.Project;
-import com.project.documentretrievalmanagementsystem.mapper.ProjectMapper;
+import com.project.eIASbackend.dto.ProjectDto;
+import com.project.eIASbackend.dto.SimilarityDto;
+import com.project.eIASbackend.entity.Project;
+import com.project.eIASbackend.mapper.ProjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -24,7 +24,7 @@ class IProjectServiceTest {
     @Autowired
     IProjectService projectService;
     @Autowired
-    ISchemeService schemeService;
+    IAdService schemeService;
 
     @Test
     void getProjectMap() {

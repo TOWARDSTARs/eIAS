@@ -1,10 +1,10 @@
-package com.project.documentretrievalmanagementsystem.service;
+package com.project.eIASbackend.service;
 
-import com.project.documentretrievalmanagementsystem.entity.User;
-import com.project.documentretrievalmanagementsystem.exception.HaveDisabledException;
-import com.project.documentretrievalmanagementsystem.exception.PasswordWrongException;
-import com.project.documentretrievalmanagementsystem.mapper.UserMapper;
-import com.project.documentretrievalmanagementsystem.service.impl.UserServiceImpl;
+import com.project.eIASbackend.entity.User;
+import com.project.eIASbackend.exception.HaveDisabledException;
+import com.project.eIASbackend.exception.PasswordWrongException;
+import com.project.eIASbackend.mapper.UserMapper;
+import com.project.eIASbackend.service.impl.UserServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;

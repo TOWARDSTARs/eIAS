@@ -1,4 +1,4 @@
-package com.project.documentretrievalmanagementsystem.service;
+package com.project.eIASbackend.service;
 
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.junit.jupiter.api.Test;
@@ -15,7 +15,7 @@ class IAdServiceTest {
     @Autowired
     IMaterialService materialService;
     @Autowired
-    ISchemeService schemeService;
+    IAdService schemeService;
 
 
     @Test

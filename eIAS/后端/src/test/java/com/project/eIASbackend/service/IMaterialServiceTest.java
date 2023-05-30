@@ -1,17 +1,17 @@
-package com.project.documentretrievalmanagementsystem.service;
+package com.project.eIASbackend.service;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.project.documentretrievalmanagementsystem.dto.EsQueryDto;
-import com.project.documentretrievalmanagementsystem.dto.FuzzyQueryDto;
-import com.project.documentretrievalmanagementsystem.dto.MaterialDto;
-import com.project.documentretrievalmanagementsystem.dto.UserDto;
-import com.project.documentretrievalmanagementsystem.entity.Material;
-import com.project.documentretrievalmanagementsystem.entity.Project;
-import com.project.documentretrievalmanagementsystem.entity.User;
-import com.project.documentretrievalmanagementsystem.service.impl.MaterialServiceImpl;
-import com.project.documentretrievalmanagementsystem.service.impl.ProjectServiceImpl;
+import com.project.eIASbackend.dto.EsQueryDto;
+import com.project.eIASbackend.dto.FuzzyQueryDto;
+import com.project.eIASbackend.dto.MaterialDto;
+import com.project.eIASbackend.dto.UserDto;
+import com.project.eIASbackend.entity.Material;
+import com.project.eIASbackend.entity.Project;
+import com.project.eIASbackend.entity.User;
+import com.project.eIASbackend.service.impl.MaterialServiceImpl;
+import com.project.eIASbackend.service.impl.ProjectServiceImpl;
 import org.apache.commons.io.IOUtils;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;

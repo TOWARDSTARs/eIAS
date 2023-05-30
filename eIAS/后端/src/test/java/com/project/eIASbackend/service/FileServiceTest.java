@@ -1,6 +1,6 @@
-package com.project.documentretrievalmanagementsystem.service;
+package com.project.eIASbackend.service;
 
-import com.project.documentretrievalmanagementsystem.service.impl.FileServiceImpl;
+import com.project.eIASbackend.service.impl.FileServiceImpl;
 import org.apache.http.entity.ContentType;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;

@@ -21,8 +21,8 @@ import com.project.eIASbackend.exception.SameMaterialNameException;
 import com.project.eIASbackend.mapper.MaterialMapper;
 import com.project.eIASbackend.service.*;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.project.documentretrievalmanagementsystem.utils.FileRdWt;
-import com.project.documentretrievalmanagementsystem.utils.TransTotxtS;
+import com.project.eIASbackend.utils.FileRdWt;
+import com.project.eIASbackend.utils.TransTotxtS;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Lazy;
@@ -69,7 +69,7 @@ public class MaterialServiceImpl extends ServiceImpl<MaterialMapper, Material> i
     MaterialMapper materialMapper;
 
     @Autowired
-    ISchemeService schemeService;
+    IAdService schemeService;
 
     @Autowired
     IRecordService recordService;
