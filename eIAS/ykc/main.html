@@ -24,13 +24,10 @@
         <div class="info-meu">
           <ul>
               <li onclick="showPanal1(this)">
-                  <a href="#panal1">推广管理</a>
+                  <a href="##">推广管理</a>
               </li>
               <li onclick="showPanal1(this)">
-                  <a href="#panal2">审核</a>
-              </li>
-              <li onclick="showPanal1(this)">
-                  <a href="##">退款确认</a>
+                  <a href="##">审核</a>
               </li>
               <li onclick="showPanal1(this)">
                   <a href="##">文档更新</a>
@@ -43,18 +40,53 @@
       </nav>
       <div class="right">
 
-        <div class="panal" style="display: block;">
+        <div class="panal promotion" style="display: block;">
             <div class="tab"></div>
             <div class="content">
-                <h1>广告业务详细描述</h1>
+                <h1>广告业务详细状况</h1>
                 <h2>套餐一</h2>
-                <div class="container">
-                    
-                    <div class="image-container">
+                <div class="containers">
+                    <div class="cover">
                         <img src="images/firefox.svg" alt="封面图片">
                     </div>
-                    <div class="text-container">
-                        <textarea></textarea>
+                    <div class="text">
+                        <p>基础价格：
+                            <br>
+                            <input type="text" id="price">元/min
+                        </p>
+                        <p>时间权重
+                            <br>
+                            02:30-07:00 :
+                            <br>
+                            <input type="text" id="weight">
+                            <br>
+                            21:30-02:30 :
+                            <br>
+                            <input type="text" id="weight">
+                            <br>
+                            09:30-11:30 :
+                            <br>
+                            13:30-17:30 :
+                            <br>
+                            <input type="text" id="weight2"> 
+                            <br>
+                            07:00-09:30 :
+                            <br>
+                            11:30-17:30 :
+                            <br>
+                            17:30-21:30 :
+                            <br>
+                            <input type="text" id="weight3">
+                        </p>
+                        <p>频率权重:
+                            <div id="range">
+                                <span>0</span>
+                                <div class="bar">
+                                    <div class="progress"></div>
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                        </p>
                     </div>
                 </div>
                   
@@ -114,19 +146,6 @@
             
         </div>
 
-
-        <div class="panal" style="display: block;">
-            <div class="tab">
-                <a href="##" class="on" onclick="showLi(this)">账户充值</a>
-                <a href="##" onclick="showLi(this)">账户流水</a>
-            </div>
-            <div class="content">
-                <ul>
-                    <li style="display:block;">全部类型消息2</li>
-                    <li>产品消息2</li>
-                </ul>
-            </div>
-        </div>
 
         <div class="panal" style="display: block;">
             <div class="tab"></div>

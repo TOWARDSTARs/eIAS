@@ -5,16 +5,61 @@
     text-align: left;
   }
   
-.container {
-    width: 100%;
-}
-.image-container {
-    float: left; 
-    width: 40%;
-}
-.text-container {
-    float: right; 
-    width: 60%;
-}
+  .containers {
+    display: flex;
+    width:100%;
+    
+  }
+  
+  .cover {
+    flex: 0 0 40%;
+    
+  }
+  
+  .text {
+    flex: 0 0 60%;
+    
+  }
+  
 
+  * {
+    touch-action:manipulation
+  }
+  #range {
+    width:160px;
+    height:80px;
+    margin:0;
+    position:relative;
+  }
+  .bar {
+    width:160px;
+    height:12px;
+    border-radius:10px;
+    background:#e4e7ed;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    cursor:pointer;
+  }
+  .progress {
+    width:0;
+    height:12px;
+    border-radius:10px;
+    background:#409eff;
+  }
+  .dot {
+    width:20px;
+    height:20px;
+    background:#fff;
+    border:1px solid #409eff;
+    position:absolute;
+    bottom:0;
+    top:0;
+    margin:auto 0;
+    border-radius:50%;
+    cursor:pointer;
+  }
   
