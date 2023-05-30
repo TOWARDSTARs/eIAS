@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 /************************
- * DocumentRetrievalManagementSystem
+ * eIAsbackend
  * com.project.eIASbackend.dto
  * MHC
  * author : zxin

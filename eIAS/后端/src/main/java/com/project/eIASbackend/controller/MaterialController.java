@@ -9,6 +9,7 @@ import com.project.eIASbackend.common.UserHolder;
 import com.project.eIASbackend.dto.EsQueryDto;
 import com.project.eIASbackend.dto.MaterialDto;
 import com.project.eIASbackend.dto.MaterialFileDto;
+import com.project.eIASbackend.dto.FuzzyQueryDto;
 import com.project.eIASbackend.entity.Material;
 import com.project.eIASbackend.entity.Record;
 import com.project.eIASbackend.entity.Project;
@@ -28,6 +29,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
 
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletResponse;

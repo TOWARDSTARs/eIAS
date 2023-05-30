@@ -1,3 +1,4 @@
+//每次请求前刷新用户token并将用户信息保存到ThreadLocal中
 package com.project.eIASbackend.interceptors;
 
 import cn.hutool.core.bean.BeanUtil;
@@ -14,8 +15,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
-import static com.project.documentretrievalmanagementsystem.utils.RedisConstants.LOGIN_USER_KEY;
-import static com.project.documentretrievalmanagementsystem.utils.RedisConstants.LOGIN_USER_TTL;
+import static com.project.eIASbackend.utils.RedisConstants.LOGIN_USER_KEY;
+import static com.project.eIASbackend.utils.RedisConstants.LOGIN_USER_TTL;
 
 
 public class RefreshTokenInterceptor implements HandlerInterceptor {

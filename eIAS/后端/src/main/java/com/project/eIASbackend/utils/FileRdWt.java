@@ -1,3 +1,6 @@
+//readFile: 读取文件内容。根据给定的文件路径 filePath，使用 Apache POI 库读取 Word 文档的内容，并将内容以字符串形式返回。
+//writeFile: 写入文件内容。根据给定的文件路径 filePath 和内容 content，使用字符流的方式将内容写入文件。
+//readTxt: 读取文本文件内容。根据给定的文件路径 path，使用字符流的方式读取文本文件的内容，并以 StringBuffer 形式返回。
 package com.project.eIASbackend.utils;
 
 import org.apache.poi.xwpf.extractor.XWPFWordExtractor;

@@ -1,3 +1,5 @@
+//createCategoryFolder: 创建资料分类文件夹。根据给定的路径 Path 和分类名称
+//categoryName，在指定路径下创建一个以分类名称为名的文件夹。如果文件夹不存在，则创建文件夹；如果文件夹已存在，则不进行任何操作。
 package com.project.eIASbackend.utils;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;

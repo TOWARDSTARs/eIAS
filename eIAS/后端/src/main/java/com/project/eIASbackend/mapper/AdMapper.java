@@ -1,11 +1,8 @@
 package com.project.eIASbackend.mapper;
 
-import com.project.eIASbackend.entity.Scheme;
+import com.project.eIASbackend.entity.Ad;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Select;
-
-import java.util.List;
 
 /**
  * <p>
@@ -16,6 +13,6 @@ import java.util.List;
  * @since 2023-05-14
  */
 @Mapper
-public interface SchemeMapper extends BaseMapper<Scheme> {
+public interface AdMapper extends BaseMapper<Ad> {
 
 }

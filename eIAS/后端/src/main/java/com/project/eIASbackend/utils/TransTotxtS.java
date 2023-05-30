@@ -1,3 +1,4 @@
+//用于将各种格式的文档转换为 txt 格式，并提供其他辅助方法
 package com.project.eIASbackend.utils;
 
 

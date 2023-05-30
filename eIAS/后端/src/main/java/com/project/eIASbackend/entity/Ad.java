@@ -21,27 +21,27 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("scheme")
-@ApiModel(value="Scheme对象", description="")
-public class Scheme implements Serializable {
+@TableName("ad")
+@ApiModel(value="Ad对象", description="")
+public class Ad implements Serializable {
 
     private static final long serialVersionUID = 1L;                    //指定序列化版本号
 
-    @ApiModelProperty(value = "方案id")
+    @ApiModelProperty(value = "广告id")
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    @ApiModelProperty(value = "方案名称")
+    @ApiModelProperty(value = "广告名称")
     private String name;
 
-    @ApiModelProperty(value = "方案所属项目id")
+    @ApiModelProperty(value = "广告所属项目id")
     private Integer projectId;
 
 
     @ApiModelProperty(value = "所属用户的id")
     private Integer userId;
 
-    @ApiModelProperty(value = "方案的摘要")
+    @ApiModelProperty(value = "广告的摘要")
     private String summary;
 
 
