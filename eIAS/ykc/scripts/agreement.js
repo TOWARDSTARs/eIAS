@@ -49,3 +49,24 @@
         });
       });
       
+
+      var pText = document.getElementsByClassName('qa'),
+      btn = document.getElementsByClassName('change');
+
+      for (var i = 0; i < btn.length; i++) {
+          btn[i].index = i;
+          btn[i].flag = false; // 不可修改
+          btn[i].onclick = function() {
+              if (this.flag) {
+                  this.style.cssText = 'background:#51cbfc;color:#fff;';
+                  this.value = '修改';
+                  pText[this.index].setAttribute('contenteditable', false) // 当前p标签可编辑属性为假
+              } else { // 不可修改 变为可修改
+                  this.style.cssText = 'background:#f60;color:#fff;';
+                  this.value = '确定';
+                  pText[this.index].setAttribute('contenteditable', true)
+                  pText[this.index].focus(); //  聚焦
+              }
+              this.flag = !this.flag;
+          }
+      }
